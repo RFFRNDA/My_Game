@@ -46,16 +46,7 @@ def drawTextBold(ch,xpos,ypos):
        else:
           glutBitmapCharacter(font_style, ord(i))  
     glPopMatrix()  
-
-def bg_text(x,y):
-    glColor3ub(255, 0, 0)     
-    glBegin(GL_QUADS)
-    glVertex2f(285+x,230+y)
-    glVertex2f(495+x,230+y)
-    glVertex2f(495+x,280+y)
-    glVertex2f(285+x,280+y)
-    glEnd()
-       
+     
 def drawTextNum(skor,xpos,ypos,r,b,g):
     color = (r, b, g)
     font_style = glut.GLUT_BITMAP_8_BY_13
@@ -69,17 +60,7 @@ def drawTextNum(skor,xpos,ypos,r,b,g):
        else:
           glutBitmapCharacter(font_style, ord(i))
 
-def bg_text(x,y):
-    glColor3ub(255, 0, 0)     
-    glBegin(GL_QUADS)
-    glVertex2f(285+x,230+y)
-    glVertex2f(495+x,230+y)
-    glVertex2f(495+x,280+y)
-    glVertex2f(285+x,280+y)
-    glEnd()
-
 #=== Colors =================================================================================
-x_r_player1 = random.randrange(150,250,10)
 
 black = 0,0,0
 lightcream = 247,209,183
@@ -95,9 +76,6 @@ softgrey = 145,135,139
 red = 237,35,36
 orange= 242,99,34
 yellow = 250,163,27
-
-
-
 
 def toplimit():
     glBegin(GL_POLYGON) 
